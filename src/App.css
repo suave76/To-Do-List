@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+h1 {
+  font-weight: 900;
+  font-size: 100px;
+  color: #415d43;
+}
+h3 {
+  font-weight: 500;
+  font-size: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input_form {
+  filter: drop-shadow(0 4px 7px rgba(65, 93, 67, 25%));
+}
+.input_form button {
+  border: none;
+  background-image: linear-gradient(#a1cca5, #709775);
+}
+.input_form button:hover {
+  background-image: linear-gradient(#709775, #a1cca5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form_text {
+  font-weight: 300;
+  font-size: 16px;
+  color: #9cc7a0;
+}
+.card_prop {
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 24px 10px 16px;
+  background-image: linear-gradient(to bottom right, #a1cca5, #709775);
+  filter: drop-shadow(0 4px 7px rgba(65, 93, 67, 25%));
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.desc_card {
+  position: absolute;
+  top: 25%;
+  left: 7.5%;
+  width: 85%;
+  background-color: rgba(255, 255, 255, 55%);
+  filter: drop-shadow(0 4px 7px rgba(65, 93, 67, 35%));
+  backdrop-filter: blur(7px);
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  color: #415d43;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backdrop {
+  background-color: rgba(255, 255, 255, 20%);
+  backdrop-filter: blur(7px);
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }

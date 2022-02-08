@@ -10,11 +10,11 @@ export default function TaskForm(props){
     
     return(
         <section>
-            <div class="form-group row col-6 mb-4 p-0">
-                <div className="col-8 ">
+            <div class="form-group row col-6 mb-4 p-0 input_form">
+                <div className="col-10 ">
                     <input 
                         type="text" 
-                        class="form-control"  
+                        class="form-control rounded-pill form_text"  
                         placeholder="Enter task description"
                         value={description}
                         onChange={(e)=>{
@@ -23,13 +23,14 @@ export default function TaskForm(props){
                     />
                 </div>
                 <button 
-                    className="btn btn-info col-4"
+                    className="btn btn-info col-2 rounded-pill"
+                    disabled = {description.length === 0}
                     onClick={()=>{
                         addTask(newKey,description)
                         setDescription("");
                     }}
                     >
-                    Add Task</button>
+                    Add</button>
             </div> 
         </section>
     )

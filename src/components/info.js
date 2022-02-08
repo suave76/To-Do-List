@@ -11,19 +11,22 @@ export default function Info(props){
         if(!about)
             return <></>
         var descCard=(<>
-        <div className='card mt-4'>
-        <div className=" card-body row align text-left">
-                <div className='col-11 text-left'>
-                    <h5 className='mb-4'>description:</h5>
-                    <p>{about}</p>
-                </div>
-                <div className='col-1 text-right '>
-                    <FontAwesomeIcon icon={faTimes} 
-                    type="button"
-                    onClick={()=>closeFxn("")}/>
-                </div>
-            </div> 
-        </div> 
+        <div className='backdrop'>
+            <div className='card pl-2 desc_card'>
+                <div className=" card-body row align text-left">
+                    <div className='col-11 text-left'>
+                        <h3 className='mb-4'>description:</h3>
+                        <p>{about}</p>
+                    </div>
+                    <div className='col-1 text-right '>
+                        <FontAwesomeIcon icon={faTimes} 
+                            type="button"
+                            onClick={()=>closeFxn("")}/>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
         </>)
         return descCard;
     }
